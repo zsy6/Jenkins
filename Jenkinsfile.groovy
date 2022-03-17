@@ -1,9 +1,8 @@
 #!groovy
 pipeline{
     agent any
-
     stages{
-        stages('Build'){
+        stage('Build'){
             steps{
                 echo 'get Jenkinsfile from git'
             }
